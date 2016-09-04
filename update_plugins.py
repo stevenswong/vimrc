@@ -16,6 +16,7 @@ from os import path
 
 #--- Globals ----------------------------------------------
 PLUGINS = """
+a.vim https://github.com/vim-scripts/a.vim
 tagbar https://github.com/majutsushi/tagbar
 vim-easymotion https://github.com/easymotion/vim-easymotion
 ack.vim https://github.com/mileszs/ack.vim
