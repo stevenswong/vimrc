@@ -232,6 +232,7 @@ sure you have the latest version of the syntax checker installed. If it still
 fails then post an [issue][bug_tracker] - or better yet, create a pull request.
 
 <a name="faqcheckers"></a>
+
 __4.2. Q. Syntastic supports several checkers for my filetype, how do I tell it
 which one(s) to use?__
 
@@ -329,6 +330,17 @@ list of options should be included in the [manual][checkers]
 (`:help syntastic-checkers` in Vim).
 
 <a name="faqloclist"></a>
+
+__4.6. Q. I run a checker and the location list is not updated...__  
+__4.6. Q. I run`:lopen` or `:lwindow` and the error window is empty...__
+
+A. By default the location list is changed only when you run the `:Errors`
+command, in order to minimise conflicts with other plugins. If you want the
+location list to always be updated when you run the checkers, add this line to
+your `vimrc`:
+```vim
+let g:syntastic_always_populate_loc_list = 1
+```
 
 <a name="faqlnext"></a>
 
